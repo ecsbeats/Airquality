@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for post in posts %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <!-- <img src="/static/profile_pics/{{ post.author.image_file }}" style="width:100px; height:100px;" class="rounded-circle account-img" />
+-->              <a class="mr-2" href="#">{{ post.author.username }}</a>
+              <small class="text-muted">{{ post.date_posted }}</small>
+            </div>
+            <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
+<br>
+            <p class="article-content">{{ post.content }}</p>
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}

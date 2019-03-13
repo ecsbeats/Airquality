@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ error }}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+  </head>
+  <body style="background-color:#e2e3e5;">
+    <div class="d-flex p-2 flex-column">
+    <!-- <div class="alert alert-secondary"></div> -->
+    <div class="alert alert-danger m-2" role="alert"><center>{{ error_message }}</center></div>
+      <div class=" border-light rounded m-2 bg-white p-2">
+        <center><h4>{{ error_message_title }}</h4></center>
+      </div>
+      <button type="button" class="btn m-2 btn-secondary" href="url_for('home')">Redirect To Home Page</button>
+    </div>
+  </body>
+</html>
