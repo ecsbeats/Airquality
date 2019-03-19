@@ -31,9 +31,9 @@
                         {{ form.password(class="form-control form-control-lg") }}
                     {% endif %}
                 </div>
-                <div class="form-check">
-                    {{ form.remember(class="form-check-input") }}
-                    {{ form.remember.label(class="form-check-label") }}
+                <div class="custom-control custom-checkbox mb-3">
+                    {{ form.remember(class="custom-control-input") }}
+                    {{ form.remember.label(class="custom-control-label") }}
                 </div>
             </fieldset>
             <div class="form-group">
@@ -45,7 +45,7 @@
         </form>
     </div>
     <div class="border-top pt-3">
-        <small class="text-muted">
+        <small class="text-light">
             Need An Account? <a class="ml-2" href="{{ url_for('register') }}">Sign Up Now</a>
         </small>
     </div>

@@ -1,0 +1,73 @@
+{% extends 'layout.html' %}
+{% block content %}
+<style>
+</style>
+ <div class="dashboard-main-wrapper">
+	 <div class="dashboard-wrapper">
+                                <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100" src="{{ url_for('static', filename='images/slideshow1.jpg')}}" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="{{ url_for('static', filename='images/slideshow2.jpg')}}" alt="Second slide">
+
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="{{ url_for('static', filename='images/slideshow3.jpg')}}" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>  </a>
+
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>  </a>
+									  <div class="carousel-caption d-none d-md-block">
+                                          <!--
+
+									<h1><center><b>“Building a Healthier Future”</b></center></h1>
+
+<p>It is widely agreed amongst the world that pollution in one’s environment is harmful to a person’s health and to the Earth as a whole. Many researchers and analyists have found there to be an increased rate of health issues in the young and elderly as a result of high levels of <b>pollution</b> in their body.</p>
+
+<p>In fact, a lack of air quality is often associated with the following diseases:</p>
+<ul>
+	<li>Chronic obstructive pulmonary disorder (COPD)</li>
+	<li>Lung Cancer</li>
+	<li>Asthma</li>
+	<li>And Other Respiratory Illnesses</li>
+</ul>
+
+<p>However, doctors today still fail to question their patients on their previous residences and time spent in those areas. Rather doctors choose to question more along the lines of genes and ______ while pollutant intake is a much more influential matter in the patient's health. <p>
+
+<p>This web browser was created by two middle schoolers who devoted time into developing a <b>systematic</b> way for patients to take control of their health. By simply imputing their past home locations along with the time they spent in each given location, our code can generate an analyzed data chart allowing patients and doctors alike to <i>predict and inform</i> themselves about possible diseases in their <b>future</b>. We believe this will allow people to alter their lifestyle to create a healthier life for them and their loved ones. </p>
+</div>
+ </div>
+	 </div>
+</div>
+<h1><center><b>“Building a Healthier Future”</b></center></h1>
+
+<p>It is widely agreed amongst the world that pollution in one’s environment is harmful to a person’s health and to the Earth as a whole. Many researchers and analyists have found there to be an increased rate of health issues in the young and elderly as a result of high levels of <b>pollution</b> in their body.</p>
+
+<p>In fact, a lack of air quality is often associated with the following diseases:</p>
+<ul>
+	<li>Chronic obstructive pulmonary disorder (COPD)</li>
+	<li>Lung Cancer</li>
+	<li>Asthma</li>
+	<li>And Other Respiratory Illnesses</li>
+</ul>
+
+<p>However, doctors today still fail to question their patients on their previous residences and time spent in those areas. Rather doctors choose to question more along the lines of genes and ______ while pollutant intake is a much more influential matter in the patient's health. <p>
+
+<p>This web browser was created by two middle schoolers who devoted time into developing a <b>systematic</b> way for patients to take control of their health. By simply imputing their past home locations along with the time they spent in each given location, our code can generate an analyzed data chart allowing patients and doctors alike to <i>predict and inform</i> themselves about possible diseases in their <b>future</b>. We believe this will allow people to alter their lifestyle to create a healthier life for them and their loved ones. </p>
+-->
+                                      </div>
+                                </div>
+     </div>
+{% endblock %}

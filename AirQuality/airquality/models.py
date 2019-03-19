@@ -20,9 +20,11 @@ class User(db.Model, UserMixin):
 
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(100), nullable=False)
-    date_posted = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
-    content = db.Column(db.Text, nullable=False)
+    name = db.Column(db.String(100), nullable=False)
+    county = db.Column(db.Text, nullable=False)
+    years_lived = db.Column(db.Text, nullable=False)
+    start_year = db.Column(db.Text, nullable=False)
+    end_year = db.Column(db.Text, nullable=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     def __repr__(self):
         return f"Post('{self.title}', '{self.date_posted}')"
